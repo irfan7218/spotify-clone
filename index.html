@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      .material-symbols-outlined {
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img
+          width="30px"
+          height="30px"
+          src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Primary_Logo_RGB_White.png"
+          alt=""
+        />
+        <div id="search-panel">
+          <img id="icons" src="Assets/svg/home.svg" alt="" />
+
+          <div id="search-bar">
+            <img id="search-icon" height="24px" src="Assets/svg/search.svg"">
+            <span id="search-text">What do you want to play?</span>
+            <div id="verticle-line"></div>
+            <img id="browse" src="Assets/svg/browse.svg" alt="" />
+          </div>
+        </div>
+        <div id="buttons">
+          <span>Sign up</span>
+          <button id="login">Log in</button>
+        </div>
+      </nav>
+    </header>
+    <div id="main-section">
+      <aside>
+        <div id="playlist">
+          <div id="library">
+            <img width="30px" src="Assets/svg/library.svg" alt="" />Your Library
+          </div>
+          <div id="plus-icon">
+            <img src="Assets/svg/plus.svg" alt="" />
+          </div>
+        </div>
+        <section id="playlist&podcasts">
+          <div class="create-playlist">
+            <span>Create your first playlist</span>
+            <span>It's easy, we'll help you</span>
+            <button id="createPlaylist-button">Create playlist</button>
+          </div>
+          <div id="podcasts">
+            <span>Let's find some podcasts to follow</span>
+            <span>We'll keep you updated on new episodes</span>
+            <button id="browsePodcast-button">Browse podcasts</button>
+          </div>
+        </section>
+        <div>
+          <div class="sidelinks">
+            <div class="legal">
+              <a href=""><span>Legal</span></a>
+            </div>
+            <div class="safety">
+              <a href=""><span>Safety & Privacy Center</span></a>
+            </div>
+            <div class="privacy">
+              <a href=""><span>Privacy Policy</span></a>
+            </div>
+            <div class="cookies">
+              <a href=""><span>Cookies</span></a>
+            </div>
+            <div class="ads">
+              <a href=""><span>About Ads</span></a>
+            </div>
+            <div class="accessibility">
+              <a href=""><span>Accessibility</span></a>
+            </div>
+          </div>
+          <span>Cookies</span>
+        </div>
+        <button id="language-btn">
+          <img src="Assets/svg/language.svg" alt="" />English
+        </button>
+      </aside>
+      <section id="songs">
+        <div class="popular-artist">
+          <div class="explore-artist">
+            <span id="popular-artist" class="heading">Popular artist</span>
+            <span class="show-all">Show all</span>
+          </div>
+          <div class="artists-photos">
+            <div id="pritam" class="popular">
+              <div class="pritam-image"></div>
+              <span class="artist-name">Pritam</span>
+              <span class="artist-tag">Artist</span>
+              <img
+                width="55px"
+                src="Assets/svg/playbutton.svg"
+                alt=""
+                class="playbutton"
+              />
+            </div>
+            <div id="A-R-Rahman" class="popular">
+              <div class="rahman-image"></div>
+              <span class="artist-name">A.R.Rahman</span>
+              <span class="artist-tag">Artist</span>
+              <img
+                width="55px"
+                src="Assets/svg/playbutton.svg"
+                alt=""
+                class="playbutton"
+              />
+            </div>
+            <div id="sachin-jigar" class="popular">
+              <div class="sachin-jigar-image"></div>
+              <span class="artist-name">Sachin-Jigar</span>
+              <span class="artist-tag">Artist</span>
+              <img
+                width="55px"
+                src="Assets/svg/playbutton.svg"
+                alt=""
+                class="playbutton"
+              />
+            </div>
+            <div id="arijit-singh" class="popular">
+              <div class="arijit-image"></div>
+              <span class="artist-name">Arijit Singh</span>
+              <span class="artist-tag">Artist</span>
+              <img
+                width="55px"
+                src="Assets/svg/playbutton.svg"
+                alt=""
+                class="playbutton"
+              />
+            </div>
+            <div id="anirudh" class="popular">
+              <div class="anirudh-image"></div>
+              <span class="artist-name">Anirudh Ravichandra</span>
+              <span class="artist-tag">Artist</span>
+              <img
+                width="55px"
+                src="Assets/svg/playbutton.svg"
+                alt=""
+                class="playbutton"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="popular-artist popular-album" id="album">
+          <div class="explore-artist">
+            <span id="popular-album" class="heading">Popular albums </span>
+            <span class="show-all">Show all</span>
+          </div>
+          <div class="albumlist">
+            <div id="album-1" class="popular">
+              <div id="album-1-image" class="img"></div>
+              <span class="album-name artist-name">GLORY</span>
+              <span class="singer-name artist-tag">Yo Yo Honey Singh</span>
+              <img
+                width="55px"
+                src="Assets/svg/playbutton.svg"
+                alt=""
+                class="playbutton"
+              />
+            </div>
+            <div id="album-2" class="popular">
+              <div id="album-2-image" class="img"></div>
+              <span class="album-name artist-name">Ashiqui 2</span>
+              <span class="singer-name artist-tag">
+                <a href="">Mithoon</a>, <a href="">Ankit Tiwari</a>,
+                <a href="">Jeet Gannguli</a>
+              </span>
+              <img
+                width="55px"
+                src="Assets/svg/playbutton.svg"
+                alt=""
+                class="playbutton"
+              />
+            </div>
+            <div id="album-3" class="popular">
+              <div id="album-3-image" class="img"></div>
+              <span class="album-name artist-name">Jo Tum Mere Ho</span>
+              <span class="singer-name artist-tag">Anuv Jain</span>
+              <img
+                width="55px"
+                src="Assets/svg/playbutton.svg"
+                alt=""
+                class="playbutton"
+              />
+            </div>
+            <div id="album-4" class="popular">
+              <div id="album-4-image" class="img"></div>
+              <span class="album-name artist-name">Making Memories</span>
+              <span class="singer-name artist-tag">
+                <span>Karan Aujla,</span>
+                <span>Ikky</span>
+              </span>
+              <img
+                width="55px"
+                src="Assets/svg/playbutton.svg"
+                alt=""
+                class="playbutton"
+              />
+            </div>
+            <div id="album-5" class="popular">
+              <div id="album-5-image" class="img"></div>
+              <span class="album-name artist-name"
+                >Yeh Jawaani Hai Deewani</span
+              >
+              <span class="singer-name artist-tag">Pritam</span>
+              <img
+                width="55px"
+                src="Assets/svg/playbutton.svg"
+                alt=""
+                class="playbutton"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="popular-artist popular-album popular" id="album">
+          <div class="explore-artist">
+            <span id="popular-album" class="heading">Popular radio </span>
+            <span class="show-all">Show all</span>
+          </div>
+          <div class="radiolist albumlist">
+            <div id="radio-1" class="popular">
+              <div id="radio-1-image" class="img"></div>
+              <span class="album-name artist-name"></span>
+              <span class="singer-name co-singers artist-tag"
+                >With Atif Aslam, Sachin-Jigar, Mithoon and more</span
+              >
+              <img
+                width="55px"
+                src="Assets/svg/playbutton.svg"
+                alt=""
+                class="playbutton"
+              />
+            </div>
+            <div id="radio-2" class="popular">
+              <div id="radio-2-image" class="img"></div>
+              <span class="album-name artist-name"></span>
+              <span class="singer-name co-singers artist-tag"
+                >With Karan Aujla, Shubh, AP Dhillon and more
+              </span>
+              <img
+                width="55px"
+                src="Assets/svg/playbutton.svg"
+                alt=""
+                class="playbutton"
+              />
+            </div>
+            <div id="radio-3" class="popular">
+              <div id="radio-3-image" class="img"></div>
+              <span class="album-name artist-name"></span>
+              <span class="singer-name co-singers artist-tag">With Mohammed Rafi, Mukesh, Asha Bhosle and more</span>
+              <img
+                width="55px"
+                src="Assets/svg/playbutton.svg"
+                alt=""
+                class="playbutton"
+              />
+            </div>
+            <div id="radio-4" class="popular">
+              <div id="radio-4-image" class="img"></div>
+              <span class="album-name artist-name"></span>
+              <span class="singer-name co-singers artist-tag">
+                <span>Karan Aujla,</span>
+                <span>Ikky</span>
+              </span>
+              <img
+                width="55px"
+                src="Assets/svg/playbutton.svg"
+                alt=""
+                class="playbutton"
+              />
+            </div>
+            <div id="radio-5" class="popular">
+              <div id="radio-5-image" class="img"></div>
+              <span class="album-name artist-name"></span>
+              
+              <span class="singer-name co-singers artist-tag">With Mohammed Rafi, Mukesh, Asha Bhosle and more</span>
+              <img
+                width="55px"
+                src="Assets/svg/playbutton.svg"
+                alt=""
+                class="playbutton"
+              />
+            </span>
+          </div>
+        </div>
+      </div>
+        <div class="popular-artist popular-album popular" id="charts">
+
+          <div class=" explore-charts explore-artist">
+              <span id="popular-charts" class="heading">Featured charts </span>
+              <span class="show-all">Show all</span>
+            </div>
+            <div class="featured-charts radiolist albumlist">
+              <div id="chart-1" class="popular">
+                <div id="chart-1-image" class="img"></div>
+                <span class="album-name artist-name"></span>
+                <span class="singer-name co-singers artist-tag"
+                  >Your weekly update of the most played tracks right now - Global.</span
+                >
+                <img
+                  width="55px"
+                  src="Assets/svg/playbutton.svg"
+                  alt=""
+                  class="playbutton"
+                />
+              </div>
+              <div id="chart-2" class="popular">
+                <div id="chart-2-image" class="img"></div>
+                <span class="album-name artist-name"></span>
+                <span class="singer-name co-singers artist-tag"
+                  >Your weekly update of the most played tracks right now - USA.
+                </span>
+                <img
+                  width="55px"
+                  src="Assets/svg/playbutton.svg"
+                  alt=""
+                  class="playbutton"
+                />
+              </div>
+              <div id="chart-3" class="popular">
+                <div id="chart-3-image" class="img"></div>
+                <span class="album-name artist-name"></span>
+                <span class="singer-name co-singers artist-tag">Your weekly update of the most played tracks right now - USA.</span>
+                <img
+                  width="55px"
+                  src="Assets/svg/playbutton.svg"
+                  alt=""
+                  class="playbutton"
+                />
+              </div>
+              <div id="chart-4" class="popular">
+                <div id="chart-4-image" class="img"></div>
+                <span class="album-name artist-name"></span>
+                <span class="singer-name co-singers artist-tag">
+                  Your weekly update of the most played tracks right now - USA.
+                </span>
+                <img
+                  width="55px"
+                  src="Assets/svg/playbutton.svg"
+                  alt=""
+                  class="playbutton"
+                />
+              </div>
+              <div id="chart-5" class="popular">
+                <div id="chart-5-image" class="img"></div>
+                <span class="album-name artist-name"></span>
+                
+                <span class="singer-name co-singers artist-tag">Your weekly update of the most played tracks right now - USA.</span>
+                <img
+                  width="55px"
+                  src="Assets/svg/playbutton.svg"
+                  alt=""
+                  class="playbutton"
+                />
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class=" from-editors popular-artist popular-album popular" id="editors">
+
+          <div class=" explore-charts explore-artist">
+              <span id="editors-list" class="heading">Featured charts </span>
+              <span class="show-all">Show all</span>
+            </div>
+            <div class="featured-charts radiolist albumlist">
+              <div id="editors-list-1" class="popular">
+                <div id="editors-list-1-image" class="img"></div>
+                <span class="album-name artist-name"></span>
+                <span class="singer-name co-singers artist-tag"
+                  >The hottest 50. Cover: ROSÉ & Bruno Mars</span
+                >
+                <img
+                  width="55px"
+                  src="Assets/svg/playbutton.svg"
+                  alt=""
+                  class="playbutton"
+                />
+              </div>
+              <div id="editors-list-2" class="popular">
+                <div id="editors-list-2-image" class="img"></div>
+                <span class="album-name artist-name"></span>
+                <span class="singer-name co-singers artist-tag"
+                  >Kick back to the best new and recent chill hits.
+                </span>
+                <img
+                  width="55px"
+                  src="Assets/svg/playbutton.svg"
+                  alt=""
+                  class="playbutton"
+                />
+              </div>
+              <div id="editors-list-3" class="popular">
+                <div id="editors-list-3-image" class="img"></div>
+                <span class="album-name artist-name"></span>
+                <span class="singer-name co-singers artist-tag">Where R&B lives. Cover: Summer Walker</span>
+                <img
+                  width="55px"
+                  src="Assets/svg/playbutton.svg"
+                  alt=""
+                  class="playbutton"
+                />
+              </div>
+              <div id="editors-list-4" class="popular">
+                <div id="editors-list-4-image" class="img"></div>
+                <span class="album-name artist-name"></span>
+                <span class="singer-name co-singers artist-tag">
+                  New music from Tyler, The Creator, Gucci Mane, Sexyy Red and Megan Thee Stallion.
+                </span>
+                <img
+                  width="55px"
+                  src="Assets/svg/playbutton.svg"
+                  alt=""
+                  class="playbutton"
+                />
+              </div>
+              <div id="editors-list-5" class="popular">
+                <div id="editors-list-5-image" class="img"></div>
+                <span class="album-name artist-name"></span>
+                
+                <span class="singer-name co-singers artist-tag">Peaceful piano to help you slow down, breathe, and relax. </span>
+                <img
+                  width="55px"
+                  src="Assets/svg/playbutton.svg"
+                  alt=""
+                  class="playbutton"
+                />
+              </span>
+            </div>
+          </div>
+        </div>
+        <footer id="footer" class="footer-links">
+           <div class="company">
+<div><span>Company</span></div>
+<div>
+  <ul>
+    <li><a href="">About</a></li>
+    <li><a href="">Jobs</a></li>
+    <li><a href="">For the Record</a></li>
+  </ul>
+</div>
+           </div>
+           <div class="company">
+<div><span>Communities
+
+</span></div>
+<div>
+  <ul>
+    <li><a href="">For Artists</a></li>
+    <li><a href="">Developers</a></li>
+    <li><a href="">Advertising</a></li>
+    <li><a href="">Investors</a></li>
+    <li><a href="">Vendors</a></li>
+  </ul>
+</div>
+           </div>
+           <div class="company">
+<div><span>Useful links</span></div>
+<div>
+  <ul>
+    <li><a href="">Support</a></li>
+    <li><a href="">Free Mobile App</a></li>
+  </ul>
+</div>
+           </div>
+           <div class="company">
+<div><span>Spotify Plans</span></div>
+<div>
+  <ul>
+    <li><a href="">Premium Individual</a></li>
+    <li><a href="">Premium Duo</a></li>
+    <li><a href="">Premium Family</a></li>
+    <li><a href="">Premium Student</a></li>
+    <li><a href="">Spotify Free</a></li>
+  </ul>
+</div>
+           </div>
+           <div id="social-media-links">
+            <div id="instagram" class="socialmedia-icons">
+                <img src="Assets/svg/instagram.svg" alt="">
+            </div>
+            <div id="twitter" class="socialmedia-icons">
+                <img src="Assets/svg/twitter.svg" alt="">
+            </div>
+            <div id="facebook" class="socialmedia-icons">
+                <img src="Assets/svg/facebook.svg" alt="">
+            </div>
+           </div>
+          </footer>
+          <div id="horizontal-line">
+
+          </div>
+          <div id="copyright"><img width="15px" src="Assets/svg/copyright.svg" alt="">
+         <span >2024 Spotify AB</span></div>
+      </section><br>
+    </div>
+      <div id="bottom">
+        <div id="bottom-icons">
+
+          <img width="25px" src="Assets/svg/backward.svg" alt="">
+          <img width="30px" src="Assets/svg/pause.svg" alt="">
+          <img width="25px" src="Assets/svg/forward.svg" alt="">
+        </div>
+        <span id="songname">Yeh jawaani hai deewani</span>
+      </div>
+  </body>
+</html>

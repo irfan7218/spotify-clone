@@ -1,0 +1,644 @@
+* {
+  font-family: poppins;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --gray: #191919;
+  --white: #ffffff;
+  --lightgray: rgb(170, 170, 170);
+  --background: #000000;
+}
+body {
+  background-color: var(--background);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  align-items: center;
+}
+#icons {
+  height: 28px;
+  color: var(--white);
+  padding: 11px;
+  border-radius: 200px;
+  background-color: var(--gray);
+}
+#search-bar {
+  background-color: var(--gray);
+  border-radius: 250px;
+  display: flex;
+  align-items: center;
+  padding: 10px 2px 10px 2px;
+  width: 470px;
+  justify-content: space-between;
+}
+#search-icon {
+  padding: 0px 10px 0px 10px;
+}
+#search-text {
+  color: rgb(170, 170, 170);
+  font-family: poppins;
+  font-weight: 400;
+  font-size: 15px;
+  padding: 0px 159px 0px 0px;
+}
+#verticle-line {
+  height: 23px;
+  width: 1px;
+  background-color: rgb(170, 170, 170);
+}
+#browse {
+  padding: 0px 12px 0px 10px;
+}
+#buttons {
+  color: var(--lightgray);
+  font-family: poppins;
+  font-size: 15px;
+  font-weight: 600;
+}
+#login {
+  font-size: 15px;
+  font-weight: 600;
+  background-color: var(--white);
+  border: none;
+  border-radius: 100px;
+  padding: 13px 32px;
+  margin-left: 25px;
+}
+#search-panel {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 130px;
+}
+nav > img {
+  margin-left: 20px;
+}
+#main-section {
+  background-color: transparent;
+  width: 100%;
+  border-radius: 8px;
+  display: flex;
+  gap: 10px;
+}
+#library {
+  color: var(--lightgray);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  font-size: 15px;
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--gray);
+  padding: 10px 10px 25px 10px;
+  border-radius: 8px;
+  height: 710px;
+}
+#playlist {
+  display: flex;
+  align-items: center;
+  gap: 90px;
+  width: fit-content;
+  margin-bottom: 30px;
+}
+#plus-icon {
+  margin: 5px 0px 0px 0px;
+}
+.create-playlist {
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+  background-color: #2a2a2a;
+  padding: 16px 20px;
+  width: 230px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+#createPlaylist-button {
+  width: fit-content;
+  padding: 6px 16px;
+  border: none;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.create-playlist > span {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.create-playlist > span + span {
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  width: 220px;
+}
+#podcasts {
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+  background-color: #2a2a2a;
+  padding: 16px 20px;
+  width: 230px;
+  border-radius: 5px;
+}
+#podcasts > span {
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 600;
+}
+#podcasts > span + span {
+  margin-bottom: 20px;
+  font-size: 12px;
+  font-weight: 500;
+  width: 220px;
+}
+#browsePodcast-button {
+  width: fit-content;
+  padding: 6px 16px;
+  border: none;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.sidelinks {
+  display: grid;
+  grid-template-columns: 96px 65px 70px;
+  grid-template-rows: 29px 30px 35px;
+  margin-top: 130px;
+}
+
+.sidelinks > div a {
+  color: var(--lightgray);
+  font-size: 11px;
+  text-decoration: none;
+}
+.privacy {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  width: 110px;
+}
+.legal {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.safety {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  width: 150px;
+  position: relative;
+  right: 45px;
+}
+
+.cookies {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.ads {
+  grid-column: 3 / 3;
+  grid-row: 2 / 3;
+  width: max-content;
+}
+.accessibility {
+  grid-column: 1 / 2;
+  grid-row: 3 / 3;
+}
+#language-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: transparent;
+  border: 0.25px solid var(--lightgray);
+  color: var(--white);
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 64px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  position: relative;
+  right: 65px;
+}
+.sidelinks + span {
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 400;
+}
+#songs {
+  background-color: var(--gray);
+  width: 80vw;
+  border-radius: 8px;
+  height: 745px;
+  overflow: hidden scroll;
+}
+.popular-artist {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.explore-artist {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 18px 15px 15px;
+  align-items: flex-end;
+}
+.heading {
+  color: var(--white);
+  align-items: flex-end;
+  font-size: 22px;
+  font-weight: 700;
+}
+.show-all {
+  color: var(--white);
+  font-size: 13px;
+  font-weight: 700;
+}
+.artists-photos {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0px 10px;
+}
+
+.pritam-image {
+  height: 165px;
+  width: 165px;
+  background-color: red;
+  border-radius: 250px;
+  background-image: url("https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 8px;
+}
+.artist-name {
+  display: inline;
+  width: fit-content;
+  color: var(--white);
+  font-size: 15px;
+  font-weight: 300;
+  margin-bottom: 4px;
+}
+.artist-tag {
+  display: inline;
+  width: 170px;
+  color: var(--lightgray);
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.rahman-image {
+  height: 165px;
+  width: 165px;
+  background-color: red;
+  border-radius: 250px;
+  background-image: url("https://i.scdn.co/image/ab67616100005174b19af0ea736c6228d6eb539c");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 8px;
+}
+.playbutton {
+  position: absolute;
+  top: 110px;
+  right: 0px;
+  opacity: 0;
+}
+
+.sachin-jigar-image {
+  height: 165px;
+  width: 165px;
+  background-color: red;
+  border-radius: 250px;
+  background-image: url("https://i.scdn.co/image/ab67616100005174bd6fbc7d0973cc33940781ad");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 8px;
+}
+.arijit-image {
+  height: 165px;
+  width: 165px;
+  background-color: red;
+  border-radius: 250px;
+  background-image: url("https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 8px;
+}
+.anirudh-image {
+  height: 165px;
+  width: 165px;
+  background-color: red;
+  border-radius: 250px;
+  background-image: url("https://i.scdn.co/image/ab676161000051740f0be2054fe9594026a6b843");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 8px;
+}
+.popular {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding: 8px;
+}
+#album-1-image {
+  background-image: url("https://i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88");
+  height: 165px;
+  width: 165px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.albumlist {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 10px;
+}
+#album-2-image {
+  background-image: url("https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3");
+  height: 165px;
+  width: 165px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#album-3-image {
+  background-image: url("https://i.scdn.co/image/ab67616d00001e0272a77d038887cdc425f5ee55");
+  height: 165px;
+  width: 165px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#album-4-image {
+  background-image: url("https://i.scdn.co/image/ab67616d00001e02bb25239324c4e16ae01fda36");
+  height: 165px;
+  width: 165px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#album-5-image {
+  background-image: url("https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4");
+  height: 165px;
+  width: 165px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.singer-name a {
+  display: inline;
+  width: fit-content;
+  color: var(--lightgray);
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+}
+.img-margin {
+  margin-bottom: 8px;
+}
+#radio-1-image {
+  background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4YRxDV8wJFPHPTeXepOstw/en");
+  height: 165px;
+  width: 165px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#radio-2-image {
+  background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/2FKWNmZWDBZR4dE5KX4plR/en");
+  height: 165px;
+  width: 165px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#radio-3-image {
+  background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/0GF4shudTAFv8ak9eWdd4Y/en");
+  height: 165px;
+  width: 165px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#radio-4-image {
+  background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/4fEkbug6kZzzJ8eYX6Kbbp/en");
+  height: 165px;
+  width: 165px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#radio-5-image {
+  background-image: url("https://pickasso.spotifycdn.com/image/ab67c0de0000deef/dt/v1/img/radio/artist/1mYsTxnqsietFxj1OgoGbG/en");
+  height: 165px;
+  width: 165px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+span.co-singers {
+  display: inline;
+  width: 168px;
+  color: var(--lightgray);
+  font-size: 14px;
+  font-weight: 300;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 45px;
+}
+.img {
+  margin-bottom: 10px;
+  border-radius: 6px;
+}
+#chart-1-image {
+  background-image: url("https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg");
+  height: 165px;
+  width: 165px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#chart-2-image {
+  background-image: url("https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_us_default.jpg");
+  height: 165px;
+  width: 165px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#chart-3-image {
+  background-image: url("https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg");
+  height: 165px;
+  width: 165px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#chart-4-image {
+  background-image: url("https://charts-images.scdn.co/assets/locale_en/regional/daily/region_us_default.jpg");
+  height: 165px;
+  width: 165px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#chart-5-image {
+  background-image: url("https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg");
+  height: 165px;
+  width: 165px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.featured-charts {
+  margin: 0px -2px;
+}
+.explore-charts {
+  margin: 15px 15px;
+}
+.radiolist {
+  margin: 0px 5px;
+}
+#editors-list-1-image {
+  background-image: url("https://i.scdn.co/image/ab67706f0000000254300210e0f8fa40dfa35bd4");
+  height: 165px;
+  width: 165px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#editors-list-2-image {
+  background-image: url("https://i.scdn.co/image/ab67706f000000020408713c731caaf1f800615a");
+  height: 165px;
+  width: 165px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#editors-list-3-image {
+  background-image: url("https://i.scdn.co/image/ab67706f00000002daec85e06c13adac16c0fa94");
+  height: 165px;
+  width: 165px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#editors-list-4-image {
+  background-image: url("https://i.scdn.co/image/ab67706f00000002bed318c241fd8a88c59e0ece");
+  height: 165px;
+  width: 165px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#editors-list-5-image {
+  background-image: url("https://i.scdn.co/image/ab67706f0000000283da657fca565320e9311863");
+  height: 165px;
+  width: 165px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#footer {
+  display: flex;
+  gap: 50px;
+  margin: 30px;
+}
+
+.company ul span {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+}
+.company ul a {
+  text-decoration: none;
+  color: var(--lightgray);
+}
+.company ul li {
+  list-style: none;
+  margin-left: -37px;
+  font-size: 15px;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+span.link-tags {
+  margin-bottom: 7px;
+  color: var(--white);
+}
+footer > div {
+  display: flex;
+  color: var(--white);
+  font-weight: 600;
+}
+.company {
+  display: flex;
+  flex-direction: column;
+}
+.socialmedia-icons {
+  color: var(--white);
+  width: 35px;
+  height: 35px;
+  background-color: #2a2a2a;
+  border-radius: 163px;
+  margin-left: 15px;
+  text-align: center;
+  padding: 4px;
+}
+.socialmedia-icons img {
+  height: 24px;
+  margin: 6px;
+}
+#social-media-links {
+  margin-top: 5px;
+}
+#copyright {
+  display: flex;
+  align-items: center;
+  margin: 0px 30px 60px;
+  gap: 3px;
+}
+#copyright span {
+  color: var(--lightgray);
+  font-size: 14px;
+}
+#horizontal-line {
+  background-color: #2a2a2a;
+  width: 93%;
+  height: 1px;
+  margin: auto auto 35px auto;
+}
+#bottom {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background);
+  width: 100vw;
+  margin-top: 1px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 0px;
+  gap: 5px;
+  position: fixed;
+  bottom: 0px;
+ 
+}
+#bottom img{
+  height: fit-content;
+}
+#songname{
+  color: var(--lightgray);
+  font-size: 14px;
+}
+#bottom-icons{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
